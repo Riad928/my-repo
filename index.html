@@ -7,47 +7,57 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-             <!-- header starts -->
-      <header>
-            <div class="container">
-                <div class="header-inner">
-                    <div class="logo">
-                        <a href="">
-                            Riad
-                        </a>
-                    </div>
-                    <nav>
-                        <ul class="nav-links">
-                            <li><a href="#Home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#service">Service</a></li>
-                            <li><a href="#contact">Contact</a></li>
+             <!-- ==================== HEADER STARTS  ================= -->
+
+      <header class="bg-gray-800 sticky top-0 z-50 text-white py-8">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+
+                    <a href="#">
+                        <img src="/photo/images.png" alt="Logo" class="h-12 w-12 rounded-xl object-cover">
+                    </a>
+                   
+                    <nav class="hidden md:block">
+                        <ul class="flex space-x-6">
+                            <li><a href="#Home" class="text-lg hover:text-blue-600">Home</a></li>
+                            <li><a href="#about"  class="text-lg hover:text-blue-600">About</a></li>
+                            <li><a href="#service"  class="text-lg hover:text-blue-600">Service</a></li>
+                            <li><a href="#contact"  class="text-lg hover:text-blue-600">Contact</a></li>
                         </ul>
                     </nav>
-                
-                </div>
+                    <button class="md:hidden border px-4 py-2.5 rounded-md">Menu</button>
             </div>
+            <div class="hidden md:hidden space-x-6 px-4">
+                <ul>
+                    <li><a href="#Home" class="text-lg hover:text-blue-600">Home</a></li>
+                    <li><a href="#about" class="text-lg hover:text-blue-600">About</a></li>
+                    <li><a href="#service" class="text-lg hover:text-blue-600">Service</a></li>
+                    <li><a href="#contact" class="text-lg hover:text-blue-600">Contact</a></li>
+            </div>
+
       </header>
-             <!-- header end -->
-             <!-- main starts -->
+          
       <main>
-                   <!-- Hero section starts -->
-          <Section class="hero">
-              <div class="hero-content">
-                  <h1>Hi! I am <span>Riad Bhuiyan</span></h1>
-                  <p>Frontend Designer</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi repellat voluptatem magni accusamus maxime nostrum nisi, labore ullam eaque?</p>
-                  <button class="btn">Hire me </button>
-                   <a href="#" class="btn-link">See project</a>
+            <!-- ==================== HERO STARTS  ================= -->
+          <Section id="hero" class="">
+              <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
+f
+               <div class="md:w-1/2 text-center">
+                <h1 class="text-3xl">Hi! I am <span>Riad Bhuiyan</span></h1>
+                <p class="text-2xl">Frontend Designer</p>
+                <p class="text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi repellat voluptatem magni accusamus maxime
+                    nostrum nisi, labore ullam eaque?</p>
+                <button class="border rounded-xl shadow-lg px-6 py-4 mt-6 bg-blue-600 text-white text-xl tracking-wide">Hire me </button>
+                <a href="#" class="border rounded-xl shadow-lg px-6 py-4 mt-6 bg-gray-600 text-white text-xl">See project</a>
+               </div>
                   
+             <div class="md:w-1/2 mt-4">
+                <img src="/photo/natural .jpg" alt="logo" class="w-full h-80 object-cover">
+             </div>
+        </div>
              
-              </div>
-              <div class="hero-img">
-                <img src="photo/images (1).jpeg" alt="Man ">
-              </div>
-          </Section>
-                   <!-- Hero section end  -->
-                <!-- About section -->
+    
+                  
+            <!-- ==================== ABOUT STARTS  ================= -->
 
           <section class="About" id="#about">
                 <div class="about-content">
@@ -63,41 +73,78 @@
                  
           </section>
 
-                    <!-- About section end -->
-                     <!-- contact section starts -->
-          <section id="#contact" class="bg-text mt-10 py-18" >
-                <div class="max-w-xl mx-auto px-8">
-                <form class="bg-gray-800 text-white border p-8 rounded-2xl shadow-lg ">
+                    
+                <!-- ==================== CONTACT STARTS  ================= -->
+          <section id="#contact" class="mt-4 py-16">
+                <div class="max-w-3xl mx-auto px-6">
+                <form class="bg-gray-800 text-white border p-8 rounded-2xl shadow-lg">
                     <h1 class="text-2xl font-semibold text-center pb-4">Contact Me</h1>
                     <div class="flex flex-col space-y-2">
-                        <label for="Name" class="font-sm ">Name <span aria-hidden="true">*</span></label>
-                        <input type="text" id="Name" Name="Name" class="" required>
+                        <label for="Name" class="text-md">Name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="Name" Name="Name" class="w-full bg-white border rounded-xl px-4 py-4"required>
                     </div>
                     <div>
-                        <label for="email">email <span aria-hidden="true">*</span></label>
-                        <input type="email" id="email" Name="email" required>
+                        <label for="email" class="text-md">Email <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" Name="email" class="w-full bg-white border rounded-xl px-4 py-4"required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+                        <label for="message" class="text-md">Your Message:</label>
+                        <textarea id="message" name="message" placeholder="Write your message here..."class="w-full bg-white border rounded-xl px-4 py-8"></textarea>
                     </div>
-                    <div>
-                        <button type="submit">Submit</button>
-                        <button type="reset">Reset</button>
-                    </div>
+                <div class="mt-6 flex items-center justify-center gap-4">
+                    <button type="submit" class="bg-blue-600 px-6 py-2 rounded-md text-white shadow hover:bg-blue-700 transition">
+                        Submit
+                    </button>
+                
+                    <button type="reset" class="bg-yellow-600 px-6 py-2 rounded-md text-white shadow hover:bg-yellow-700 transition">
+                        Reset
+                    </button>
+                </div>
+
                 </form>
                 </div>
                
           </section>
-             <!-- contact section end -->
+          
       </main>
-             <!-- main end -->
-             <!-- footer starts -->
-      <footer>
-  
+             
+            <!-- ==================== FOOTER STARTS  ================= -->
+      <footer class="bg-gray-800 py-16">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center flex-col md:flex-row text-white gap-8 text-center md:text-left">
+
+               <div>
+                <h1 class="text-2xl">RIAD</h1>
+                <p class="text-md mt-4">Lorem ipsum, dolor sit amet <br>consectetur adipisicing elit. Officia, perspiciatis?</p>
+              </div>
+
+                <div class="mt-4">
+                    <h1 class="text-xl">Contact</h1>
+                    <ul class="mt-8">
+                        
+                        <a href="#">
+                            <li class="text-md ">Home</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-md mt-2">About</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-md mt-2">Service</li>
+                        </a>
+                        <a href="#">
+                            <li class="text-md mt-2">Contact</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="text-2xl">Newsletter</h2>
+                    <input type="text" placeholder="Search..." class=" w-full border rounded-xl bg-white px-4 py-4 text-md mt-4 text-gray-900">
+                </div>
+
+            </div>
+            <p class="text-center text-md text-white mt-16">@copy; 2025,All side reserved</p>
       </footer>
-            <!-- footer end -->
-     
+         
  
             
 </body>

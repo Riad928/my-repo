@@ -7,128 +7,147 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-             <!-- ==================== HEADER STARTS  ================= -->
 
+            
+      <!-- ==================== HEADER STARTS  ================= -->
       <header class="bg-gray-800 sticky top-0 z-50 text-white py-8">
             <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+               
+                <!-- Logo -->
+                <a href="#">
+                    <img src="/photo/images.png" alt="Logo" class="h-12 w-12 rounded-xl object-cover">
+                </a>
 
-                    <a href="#">
-                        <img src="/photo/images.png" alt="Logo" class="h-12 w-12 rounded-xl object-cover">
-                    </a>
-                   
-                    <nav class="hidden md:block">
-                        <ul class="flex space-x-6">
-                            <li><a href="#Home" class="text-lg hover:text-blue-600">Home</a></li>
-                            <li><a href="#about"  class="text-lg hover:text-blue-600">About</a></li>
-                            <li><a href="#service"  class="text-lg hover:text-blue-600">Service</a></li>
-                            <li><a href="#contact"  class="text-lg hover:text-blue-600">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <button class="md:hidden border px-4 py-2.5 rounded-md">Menu</button>
-            </div>
-            <div class="hidden md:hidden space-x-6 px-4">
-                <ul>
-                    <li><a href="#Home" class="text-lg hover:text-blue-600">Home</a></li>
-                    <li><a href="#about" class="text-lg hover:text-blue-600">About</a></li>
-                    <li><a href="#service" class="text-lg hover:text-blue-600">Service</a></li>
-                    <li><a href="#contact" class="text-lg hover:text-blue-600">Contact</a></li>
+                <!-- Desktop Menu   -->
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="#Home" class="text-lg hover:text-blue-600">Home</a></li>
+                        <li><a href="#about"  class="text-lg hover:text-blue-600">About</a></li>
+                        <li><a href="#service"  class="text-lg hover:text-blue-600">Service</a></li>
+                        <li><a href="#contact"  class="text-lg hover:text-blue-600">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden border px-4 py-2.5 rounded-md">Menu</button>
             </div>
 
-      </header>
-          
-      <main>
-            <!-- ==================== HERO STARTS  ================= -->
-          <Section id="hero" class="">
-              <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
-f
-               <div class="md:w-1/2 text-center">
-                <h1 class="text-3xl">Hi! I am <span>Riad Bhuiyan</span></h1>
-                <p class="text-2xl">Frontend Designer</p>
-                <p class="text-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi repellat voluptatem magni accusamus maxime
-                    nostrum nisi, labore ullam eaque?</p>
-                <button class="border rounded-xl shadow-lg px-6 py-4 mt-6 bg-blue-600 text-white text-xl tracking-wide">Hire me </button>
-                <a href="#" class="border rounded-xl shadow-lg px-6 py-4 mt-6 bg-gray-600 text-white text-xl">See project</a>
-               </div>
-                  
-             <div class="md:w-1/2 mt-4">
-                <img src="/photo/natural .jpg" alt="logo" class="w-full h-80 object-cover rounded-lg shadow-xl">
-             </div>
-        </div>
-             
-    
-                  
-            <!-- ==================== ABOUT STARTS  ================= -->
-
-          <section id="about" class="">
-                <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-6">
-                  
-                    <div class="md:w-1/2">
-                        <img src="/photo/images (1).jpeg" alt="photo" class="w-full h-80 object-cover border rounded-lg">
-                    </div>
-
-                    <div class="md:w-1/2">
-                    <h2 class="text-2xl font-bold">About Me</h2>
-                    <h3 class="text-lg font-semibold mt-2">Front-End Designeer & Developer</h3>
-                    <p class="text-gray-600 mt-1">Hi, I'm Riad — a passionate Front-End Designer who loves turning creative ideas into responsive and visually stunning
-                        websites.</p>
-                    <p  class="text-gray-600 mt-1">I specialize in HTML, CSS, JavaScript, and React. I focus on creating clean, user-friendly, and fully responsive
-                        interfaces.</p>
-                    <p  class="text-gray-600 mt-1">With 2+ years of experience, I aim to craft engaging user experiences that leave a lasting impression.</p>
-                    <a href="#contact" class="border rounded-lg bg-blue-500 text-white shadow-lg px-4 py-2 inline-block mt-6">Contact Me</a>
-                   </div>
-                  
+                <!-- Mobile Menu -->
+                <div class="hidden md:hidden space-x-6 px-4">
+                    <ul>
+                        <li><a href="#Home" class="text-lg hover:text-blue-600">Home</a></li>
+                        <li><a href="#about" class="text-lg hover:text-blue-600">About</a></li>
+                        <li><a href="#service" class="text-lg hover:text-blue-600">Service</a></li>
+                        <li><a href="#contact" class="text-lg hover:text-blue-600">Contact</a></li>
+                    </ul>
                 </div>
-                 
-          </section>
-
-                    
-                <!-- ==================== CONTACT STARTS  ================= -->
-          <section id="contact" class="mt-4 py-16">
-                <div class="max-w-3xl mx-auto px-6">
+        </header>
+     
+    <main>
+       
+        <!-- ==================== HERO STARTS ================= -->
+        <Section id="hero" class="bg-gray-100 py-16 mt-4">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+        
+                <!-- hero text -->
+                <div class="md:w-1/2 text-center">
+                    <h1 class="text-4xl font-extrabold">Hi! I am <span>Riad Bhuiyan</span></h1>
+                    <p class="text-2xl mt-4">Frontend Designer</p>
+                    <p class="text-md text-gray-600 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi repellat
+                        voluptatem magni accusamus maxime nostrum nisi, labore ullam eaque?</p>
+                       
+                    <button class="border rounded-xl shadow-lg px-6 py-4 mt-6 bg-blue-600 text-white text-xl tracking-wide">Hire
+                        me </button>
+                    <a href="#" class="border rounded-xl shadow-lg px-6 py-4 mt-6 bg-gray-600 text-white text-xl">See
+                        project</a>
+                </div>
+                
+                <!-- hero photo -->
+                <div class="md:w-1/2 mt-4">
+                    <img src="/photo/natural .jpg" alt="logo" class="w-full h-80 object-cover rounded-lg shadow-xl">
+                </div>
+            </div>
+        
+        </section>
+        
+        <!-- ==================== ABOUT STARTS  ================= -->
+        <section id="about" class="bg-white py-16 mt-4">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-16">
+        
+                <!-- About image -->
+                <div class="md:w-1/2">
+                    <img src="/photo/images (1).jpeg" alt="photo" class="w-full h-80 object-cover border rounded-lg">
+                </div>
+        
+                <!-- About text -->
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold">About Me</h2>
+                    <h3 class="text-lg font-semibold mt-2">Front-End Designeer & Developer</h3>
+                    <p class="text-gray-600 mt-1">Hi, I'm Riad — a passionate Front-End Designer who loves turning creative
+                        ideas into responsive and visually stunning
+                        websites.</p>
+                    <p class="text-gray-600 mt-1">I specialize in HTML, CSS, JavaScript, and React. I focus on creating clean,
+                        user-friendly, and fully responsive
+                        interfaces.</p>
+                    <p class="text-gray-600 mt-1">With 2+ years of experience, I aim to craft engaging user experiences that
+                        leave a lasting impression.</p>
+                    <a href="#contact"
+                        class="border rounded-lg bg-blue-500 text-white shadow-lg px-4 py-2 inline-block mt-6">Contact Me</a>
+                </div>
+        
+            </div>
+        </section>
+        
+        <!-- ==================== CONTACT STARTS  ================= -->
+        <section id="contact" class="mt-4 py-16">
+            <div class="max-w-3xl mx-auto px-6">
                 <form class="bg-gray-800 text-white border p-8 rounded-2xl shadow-lg">
-                    <h1 class="text-2xl font-semibold text-center pb-4">Contact Me</h1>
+                    <h1 class="text-4xl font-semibold text-center pb-4">Contact Me</h1>
                     <div class="flex flex-col space-y-2">
                         <label for="Name" class="text-md">Name <span aria-hidden="true">*</span></label>
-                        <input type="text" id="Name" Name="Name" class="w-full bg-white border rounded-xl px-4 py-4"required>
+                        <input type="text" id="Name" Name="Name" class="w-full bg-white border rounded-xl px-4 py-4" required>
                     </div>
                     <div>
                         <label for="email" class="text-md">Email <span aria-hidden="true">*</span></label>
-                        <input type="email" id="email" Name="email" class="w-full bg-white border rounded-xl px-4 py-4"required>
+                        <input type="email" id="email" Name="email" class="w-full bg-white border rounded-xl px-4 py-4"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="message" class="text-md">Your Message:</label>
-                        <textarea id="message" name="message" placeholder="Write your message here..."class="w-full bg-white border rounded-xl px-4 py-8"></textarea>
+                        <textarea id="message" name="message" placeholder="Write your message here..."
+                            class="w-full bg-white border rounded-xl px-4 py-8"></textarea>
                     </div>
-                <div class="mt-6 flex items-center justify-center gap-4">
-                    <button type="submit" class="bg-blue-600 px-6 py-2 rounded-md text-white shadow hover:bg-blue-700 transition">
-                        Submit
-                    </button>
-                
-                    <button type="reset" class="bg-yellow-600 px-6 py-2 rounded-md text-white shadow hover:bg-yellow-700 transition">
-                        Reset
-                    </button>
-                </div>
-
+        
+                    <div class="mt-6 flex items-center justify-center gap-4">
+                        <button type="submit"
+                            class="bg-blue-600 px-6 py-2 rounded-md text-white shadow hover:bg-blue-700 transition">
+                            Submit
+                        </button>
+                        <button type="reset"
+                            class="bg-yellow-600 px-6 py-2 rounded-md text-white shadow hover:bg-yellow-700 transition">
+                            Reset
+                        </button>
+                    </div>
+        
                 </form>
+            </div>
+        </section>
+    </main>
+        
+        <!-- ==================== FOOTER STARTS  ================= -->
+        <footer class="bg-gray-800 py-12">
+            <div
+                class="max-w-7xl mx-auto px-6 flex justify-between items-center flex-col md:flex-row text-white gap-8 text-center md:text-left">
+        
+                <div>
+                    <h1 class="text-2xl">RIAD</h1>
+                    <p class="text-md mt-4">Lorem ipsum, dolor sit amet <br>consectetur adipisicing elit. Officia, perspiciatis?
+                    </p>
                 </div>
-               
-          </section>
-          
-      </main>
-             
-            <!-- ==================== FOOTER STARTS  ================= -->
-      <footer class="bg-gray-800 py-16">
-            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center flex-col md:flex-row text-white gap-8 text-center md:text-left">
-
-               <div>
-                <h1 class="text-2xl">RIAD</h1>
-                <p class="text-md mt-4">Lorem ipsum, dolor sit amet <br>consectetur adipisicing elit. Officia, perspiciatis?</p>
-              </div>
-
+        
                 <div class="mt-4">
                     <h1 class="text-xl">Contact</h1>
                     <ul class="mt-8">
-                        
                         <a href="#">
                             <li class="text-md ">Home</li>
                         </a>
@@ -143,17 +162,27 @@ f
                         </a>
                     </ul>
                 </div>
-
+        
                 <div class="mt-4">
                     <h2 class="text-2xl">Newsletter</h2>
-                    <input type="text" placeholder="Search..." class=" w-full border rounded-xl bg-white px-4 py-4 text-md mt-4 text-gray-900">
+                    <input type="text" placeholder="Search..."
+                        class=" w-full border rounded-xl bg-white px-4 py-4 text-md mt-4 text-gray-900">
                 </div>
-
             </div>
+        
             <p class="text-center text-md text-white mt-16">@copy; 2025,All side reserved</p>
-      </footer>
-         
- 
-            
-</body>
-</html>
+        </footer>
+    </body>
+        
+ </html>
+
+
+        
+        
+    
+    
+    
+   
+     
+             
+   
